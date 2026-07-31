@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b9d6f0c8a.js" crossorigin="anonymous"></script>
+<base target="_blank">
+</head>
+
+<body>
+
+    <!-- BACKGROUND EFFECTS -->
+    <canvas id="fireworks"></canvas>
+    <div id="stars"></div>
+    <div id="hearts"></div>
+
+    <!-- LOADING SCREEN -->
+    <div id="loading">
+        <div class="loader">❤️</div>
+        <h2>Preparing Your Surprise...</h2>
+    </div>
+
+    <!-- MUSIC -->
+    <audio id="music" loop>
+        <source src="assets/music/sempurna.mp3/sempurna.mpeg" type="audio/mpeg">
+    </audio>
+
+    <!-- OPENING SCREEN -->
+    <section id="opening">
+        <div class="glass">
+            <h3>Untuk Seseorang Yang Sangat Berarti</h3>
+            <h1>Hai Sayang ❤️</h1>
+            <p>
+                Kalau kamu sedang membaca ini, berarti kamu sudah membuka hadiah kecil yang aku buat khusus untukmu.
+                Mungkin ini bukan hadiah yang paling mahal, tapi setiap halaman, setiap animasi,
+                dan setiap baris kode di website ini dibuat dengan penuh cinta.
+                Selamat datang di cerita kita.
+            </p>
+            <button id="startBtn">Buka Hadiah ❤️</button>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main id="main" class="hide">
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <h1>Hai Sayang ❤️</h1>
+            <p>
+                Terima kasih sudah hadir dalam hidupku.
+                Website ini adalah hadiah kecil dariku untukmu.
+            </p>
+        </section>
+
+        <!-- SURAT SECTION -->
+        <section class="section">
+            <h2>💌 Surat Untukmu</h2>
+            <div class="envelope" id="envelope">
+                <div class="envelope-top"></div>
+                <div class="envelope-body">
+                    <div class="letter">
+                        <h2>Untuk Kamu ❤️</h2>
+                        <p id="typingText"></p>
+                    </div>
+                </div>
+            </div>
+            <p class="click-text">Klik amplop untuk membuka surat ❤️</p>
+        </section>
+
+        <!-- GALERI SECTION -->
+        <section class="section">
+            <h2>📸 Foto Kita</h2>
+            <div class="slider">
+                <button class="nav prev">❮</button>
+                <div class="slider-track">
+                    <div class="slide">
+                        <img src="assets/img/1.jpg" alt="Foto 1" loading="lazy">
+                        <span>Aku</span>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/2.jpg" alt="Foto 2" loading="lazy">
+                        <span>Kamu</span>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/3.jpg" alt="Foto 3" loading="lazy">
+                        <span>Kita</span>
+                    </div>
+                    <div class="slide">
+                        <img src="assets/img/4.jpg" alt="Foto 4" loading="lazy">
+                        <span>Selamanya Bersama ❤️</span>
+                    </div>
+                </div>
+                <button class="nav next">❯</button>
+            </div>
+        </section>
+
+        <!-- LIGHTBOX -->
+        <div id="lightbox">
+            <span id="closeLightbox">&times;</span>
+            <img id="lightboxImage" src="" alt="Preview Foto">
+        </div>
+
+        <!-- COUNTDOWN SECTION -->
+        <section class="section">
+            <h2>⏳ Waktu Kita Bersama</h2>
+            <div class="countdown">
+                <div class="count-card">
+                    <h1 id="days">0</h1>
+                    <span>Hari</span>
+                </div>
+                <div class="count-card">
+                    <h1 id="hours">0</h1>
+                    <span>Jam</span>
+                </div>
+                <div class="count-card">
+                    <h1 id="minutes">0</h1>
+                    <span>Menit</span>
+                </div>
+                <div class="count-card">
+                    <h1 id="seconds">0</h1>
+                    <span>Detik</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIMELINE SECTION -->
+        <section class="section">
+            <h2>📅 Perjalanan Cinta Kita</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3>2 Januari 2026 ❤️</h3>
+                        <p>
+                            Hari di mana aku pertama kali mengenal seseorang bernama Deniska melalui Instagram.
+                            Awalnya hanya sebuah pesan sederhana yang aku kirim,
+                            tetapi ternyata menjadi awal dari cerita terindah dalam hidupku.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3>Pertama Chat 💬</h3>
+                        <p>
+                            Aku yang lebih dulu mengirim pesan.
+                            Saat itu aku hanya ingin mengenalmu,
+                            tetapi tanpa sadar aku mulai menunggu setiap balasan darimu.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3>2 Juli 2026 - Jogja 🥰</h3>
+                        <p>
+                            Hari ketika akhirnya kita bertemu secara langsung.
+                            Semua rasa gugup berubah menjadi bahagia,
+                            karena akhirnya aku bisa melihat senyummu secara nyata.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3>21 Juli 2026 💖</h3>
+                        <p>
+                            Hari ketika kita memutuskan untuk berjalan bersama.
+                            Sejak saat itu, aku tahu bahwa aku ingin menjadikanmu bagian dari setiap cerita dalam hidupku.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="dot"></div>
+                    <div class="content">
+                        <h3>Hari Ini 🌹</h3>
+                        <p>
+                            Sampai hari ini, aku masih memilih orang yang sama.
+                            Terima kasih sudah menjadi alasan aku tersenyum setiap hari.
+                            Aku sayang kamu, Deniska ❤️
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAT WHATSAPP SECTION -->
+        <section class="section">
+            <h2>💬 Awal Semua Cerita</h2>
+            <div class="chat-box">
+                <div class="chat left" style="--delay:0s">Asek Dadi Are Lbr</div>
+                <div class="chat right" style="--delay:0.8s">Iyaa Nich</div>
+                <div class="chat left" style="--delay:1.6s">Aduuuuuhh</div>
+                <div class="chat right" style="--delay:2.4s">Tungguin</div>
+                <div class="chat left" style="--delay:3.2s">Leh Tak Kiro Uwes</div>
+                <div class="chat right" style="--delay:4.0s">Wes Tangi Urung</div>
+            </div>
+        </section>
+
+        <!-- BOOK OF MEMORIES SECTION -->
+        <section class="section">
+            <h2>📖 Book of Memories</h2>
+            <div class="memory-book">
+                <div class="memory-page active">
+                    <h3>❤️ Halaman 1</h3>
+                    <img src="assets/img/5.jpg" alt="Memory 1" loading="lazy">
+                    <p>Hari pertama semuanya dimulai.</p>
+                </div>
+                <div class="memory-page">
+                    <h3>💕 Halaman 2</h3>
+                    <img src="assets/img/6.jpg" alt="Memory 2" loading="lazy">
+                    <p>Senyummu selalu membuat hariku lebih indah.</p>
+                </div>
+                <div class="memory-page">
+                    <h3>🌹 Halaman 3</h3>
+                    <img src="assets/img/7.jpg" alt="Memory 3" loading="lazy">
+                    <p>Semoga cerita ini tidak pernah memiliki akhir.</p>
+                </div>
+                <div class="book-control">
+                    <button id="prevPage">⬅ Sebelumnya</button>
+                    <button id="nextPage">Berikutnya ➡</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 100 ALASAN SECTION -->
+        <section class="section">
+            <h2>❤️ Kenapa Aku Sayang Kamu</h2>
+            <div id="reasonCard" class="reason-card show">
+                Karena kamu adalah alasan aku tersenyum setiap hari.
+            </div>
+            <button id="nextReason">Alasan Berikutnya ❤️</button>
+        </section>
+
+        <!-- VIDEO SECTION -->
+        <section id="videoSection" class="video-overlay">
+            <video id="loveVideo" controls>
+                <source src="assets/video/video.mp4/vid.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- GIFT BOX SECTION -->
+        <section class="section">
+            <h2>🎁 Hadiah Untukmu</h2>
+            <div id="giftBox" class="gift-box">🎁</div>
+            <div id="giftMessage" class="gift-message">
+                <h3>❤️ Surprise ❤️</h3>
+                <p>
+                    Sayang,<br><br>
+                    Terima kasih sudah hadir dalam hidupku.<br><br>
+                    Terima kasih karena selalu mau mendengarkan ceritaku,
+                    menemaniku dalam suka maupun duka,
+                    dan bertahan sejauh ini bersamaku.<br><br>
+                    Aku tahu kita tidak selalu sempurna,
+                    tetapi satu hal yang tidak pernah berubah...<br><br>
+                    Aku akan selalu memilih kamu.<br><br>
+                    Aku sayang kamu, Deniska. ❤️
+                </p>
+            </div>
+        </section>
+
+        <!-- LOVE BUTTON SECTION -->
+        <section class="section">
+            <h2>❤️ Satu Pertanyaan</h2>
+            <p>
+                Kalau suatu hari nanti dunia sedang tidak baik-baik saja...<br>
+                Maukah kamu tetap berjalan bersamaku?
+            </p>
+            <button id="loveBtn" class="love-btn">Forever ❤️</button>
+        </section>
+
+    </main>
+
+    <!-- FINAL SCREEN -->
+    <div id="finalScreen">
+        <div class="final-content">
+            <h1>❤️ I LOVE YOU ❤️</h1>
+            <p>
+                Sayang...<br><br>
+                Terima kasih sudah hadir dalam hidupku.<br><br>
+                Semoga apa pun yang terjadi nanti,<br>
+                kita tetap saling memilih,<br>
+                tetap saling mencintai,<br>
+                dan tetap bersama.<br><br>
+                Aku mencintaimu hari ini, besok, lusa, dan setiap hari setelahnya.
+            </p>
+            <button id="closeFinal">Tutup ❤️</button>
+        </div>
+    </div>
+
+    <!-- FLOATING BUTTONS -->
+    <button id="backToTop">⬆</button>
+    <button id="playMusic" class="music-btn">▶️</button>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>Hugo ❤️ Deniska</h2>
+        <p>© 2026 Our Story • Forever Together</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
